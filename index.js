@@ -16,4 +16,29 @@ function calculateArray(array) {
       operand.push(array[i])
     }
   }
+  // create a switch case to run arithmatic//
+  let answer = []
+  let num1 = nums[0]
+  let num2 = nums[1]
+
+  switch (operand[0]) {
+    case '+':
+      answer = num1 + num2
+      break
+    case '-':
+      answer = num1 - num2
+      break
+    case '*':
+      answer = num1 * num2
+      break
+    case '/':
+      answer = num1 / num2
+      break
+    default:
+      answer = NaN
+      break
+  }
+
+  return answer
 }
+module.exports = calculateArray
