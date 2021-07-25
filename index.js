@@ -11,5 +11,9 @@ function calculateArray(array) {
     else if (!isNaN(array[i]) && (array[i]) !== '') {
       nums.push(parseInt(array[i]))
     }
+    // if operand push to operand array    
+    else if ((array[i]) === '*' || (array[i]) === '/' || (array[i]) === '-' || (array[i]) === '+') {
+      operand.push(array[i])
+    }
   }
 }
